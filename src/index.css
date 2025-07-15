@@ -1,33 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap');
+:root {
+  --primary-color: #6c91c2;
+  --accent-color: #8fbcbb;
+  --bg-color: #1f2a35;
+  --card-color: #2a3644;
+  --text-color: #d8dee9;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.scores {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 5px;
+}
+
+.title {
+  display: flex;
+  margin-left: 10px;
+  padding-bottom: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.game {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+  margin-right: 50px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .pokeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 190px;
   height: 254px;
   border-radius: 20px;
-  background: #f5f5f5;
-  position: relative;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  font-family: 'Roboto Slab', serif;
   padding: 1.8rem;
-  border: 2px solid #c3c6ce;
-  transition: 0.5s ease-out;
-  overflow: visible;
+  transition: 0.3s ease;
   cursor: pointer;
- }
- 
- .innerDiv {
-  color: black;
-  height: 100%;
-  gap: .5em;
-  display: grid;
-  place-content: center;
- }
+}
 
-
-.text-body {
-  color: rgb(134, 134, 134);
-  font-size: 1.5em;
-  font-weight: bold;
- }
- /*Hover*/
- .pokeCard:hover {
-  border-color: #008bf8;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
- }
- 
+.pokeCard:hover {
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow);
+}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import CardClick from "./CardClick";
+import CardClick from "./cardClick";
 
 export default function MainComponent() {
   const [data, setData] = useState([]);

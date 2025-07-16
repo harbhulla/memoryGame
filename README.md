@@ -4,7 +4,7 @@ A memory game built with React and Vite using the PokéAPI. Try to click each Po
 
 ## 🚀 Live Demo
 
-👉 [Play it here]([https://memorygame.vercel.app](https://memory-game-kwuu.vercel.app/))
+👉 [Play it here]((https://memory-game-kwuu.vercel.app/))
 
 ## 🛠️ Tech Stack
 
